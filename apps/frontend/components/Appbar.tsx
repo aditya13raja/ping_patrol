@@ -1,5 +1,6 @@
 "use client"
 
+import Link from 'next/link';
 import {
     SignInButton,
     SignUpButton,
@@ -13,6 +14,9 @@ export default function Appbar() {
         <div className='flex justify-between items-center p-4'>
             <div>
                 <div>Ping Patrol</div>
+            </div>
+            <div> 
+                <Link href="/dashboard">Dashboard</Link>
             </div>
             <div>
                 <SignedOut>
